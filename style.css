@@ -47,17 +47,22 @@ nav a:hover {
   padding: 100px;
   background:#1d3247;
   background-size:cover;
-  display:flex;
+ 
   align-items:center;
     }
 .photo{ 
-    display: grid;
-    padding:5px 5px 0;
+  
+    margin-top:20px;
+    flex-direction:row;
+    padding:5px 10px 0;
     border: 2px solid #BC519E;
     place-items:center;
-   width: 300;
-   height:400;
+   width: 50vh;
+   height:65vh;
 
+}
+img{
+  width:100%
 }
 .about p{
    font-size:1em;
@@ -79,6 +84,7 @@ header
    position:sticky;
    top:0px;
    left:0;
+   width:100%;
    z-index:10000;
  
 }
@@ -95,10 +101,12 @@ header .logo
 }
 footer 
 {
-   box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
-   bottom:0px;
+   box-shadow: 0px 3px 10px rgba(0,0,0,1);
+   bottom:0;
    left:0;
+   width:100%;
    z-index:10000;
+   
  
 }
 
@@ -149,6 +157,7 @@ footer
   fill : #BC519E;
 }
 
+
 .banner
 {
   position:relative;
@@ -176,7 +185,7 @@ footer
 {
   fill : #BC519E;
 }
-.footer {
+.foot{
     width: 100%;
     background-color: #1d3247;
     color: bisque;
@@ -184,19 +193,20 @@ footer
     text-align: center;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
 }
- .footer a{text-decoration: none;
+ .foot a{text-decoration: none;
     color: bisque;
     display: inline-block;
     font-size: 1.3rem;
     margin: auto 1.5rem;
 }
-.footer a:hover{
+.foot a:hover{
    
     color: #BC519E;
     text-decoration: underline;
 }
 
  }
+ 
 @media (max-width: 767px) {
   header  
   {
@@ -218,29 +228,30 @@ footer
   .sci
   {
     position: absolute;
-    bottom:20px;
+    bottom:50px;
     right: initial;
     flex-direction: row;
   }
   .sci li svg
   {
    margin:initial;
-   margin-right: 15px;
+   margin-right: 100px;
   }
-  #contact {
+  .contact {
         width: 100%;
         margin: 2rem 0 0 0;
         padding: 0;
     }
-    .footer {
+    .foot {
         padding: 1rem 0;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
-    .about { 
-    display:grid;   
-    position: absolute;
+    .about  { 
+    display:grid;  
+    flex-direction: row; 
+    position:absolute;
     bottom:20px;
     right: initial;
-    flex-direction: row;
+    
     }
 }
