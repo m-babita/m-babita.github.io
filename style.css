@@ -13,10 +13,18 @@ nav
   min-height:10vh;
   margin:auto;
   display:flex;
-  align-items:center;
-  float:auto;
-  justify-content: space-between;
+  justify-content:space-between;
   
+}
+nav .logo
+{
+   
+   font-weight:500;
+   color: bisque;
+   text-decoration: none;
+   font-size:2em;
+   text-transform:uppercase;
+   transition:0.6s;
 }
 nav h1,
 nav ul
@@ -27,7 +35,7 @@ nav ul{
   list-style:none;
   display:flex;
   align-items:center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 nav a{
  text-decoration:none;
@@ -50,6 +58,10 @@ nav a:hover {
  
   align-items:center;
     }
+    .about{
+      display:flex;
+      flex-direction:row;
+    }
 .photo{ 
   
     margin-top:20px;
@@ -58,7 +70,6 @@ nav a:hover {
     border: 2px solid #BC519E;
     place-items:center;
    width: 50vh;
-   height:65vh;
 
 }
 img{
@@ -88,23 +99,14 @@ header
    z-index:10000;
  
 }
-header .logo
-{
-   position:relative;
-   font-weight:500;
-   color: bisque;
-   text-decoration: none;
-   font-size:2em;
-   display:flex;
-   text-transform:uppercase;
-   transition:0.6s;
-}
+
 footer 
 {
-   box-shadow: 0px 3px 10px rgba(0,0,0,1);
+   box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
    bottom:0;
    left:0;
    width:100%;
+   text-align:center;
    z-index:10000;
    
  
@@ -133,20 +135,32 @@ footer
 
 .sci
 {
-  position:absolute;
+  position:fixed;
   display:flex;
   flex-direction:column;
-  right:100px;
+  z-index:100;
+  background:transparent;
+  right:50px; 
+}
+.sci::after
+{
+  content:"";
+  margin: 5px auto;
+  display:block;
+  width:2px;
+  height:200px;
+  background-color: bisque;
 }
 .sci li
 {
+  background:transparent;
   list-style: none;
 }
 .sci svg
 {
-  position:relative;
+  /* position:relative; */
   display: grid;
-  place-items:center;
+  /* place-items:bottom; */
   width: 25px;
   height:25px;
   fill: bisque;
@@ -169,16 +183,22 @@ footer
   display:flex;
   align-items:center;
 }
+.social{
+  justify-content:center;
+  display:none;
+  }
+.social li{
+  list-style:none;
+}
 .social svg
 { 
-  flex-direction: row;
   position:relative;
-  display: grid;
   place-items:center;
   width: 25px;
   height:25px;
   fill: bisque;
-  margin:20px 0 0;
+
+  margin:20px;
   
 }
 .social svg:hover
@@ -205,9 +225,8 @@ footer
     text-decoration: underline;
 }
 
- }
  
-@media (max-width: 767px) {
+@media only screen and (max-width: 900px) {
   header  
   {
     padding: 20px 50px;
@@ -225,12 +244,20 @@ footer
   {
    font-size: 1em;
   }
+  .social{
+    display: flex;
+    flex-direction:row;
+  }
   .sci
   {
     position: absolute;
     bottom:50px;
     right: initial;
     flex-direction: row;
+  }
+  .sci::after
+  {
+    display:none;
   }
   .sci li svg
   {
@@ -246,12 +273,11 @@ footer
         padding: 1rem 0;
         font-size: 0.7rem;
     }
-    .about  { 
-    display:grid;  
-    flex-direction: row; 
-    position:absolute;
+    .about  {  
+    flex-direction: column; 
+    /*position:absolute;
     bottom:20px;
-    right: initial;
+    right: initial;*/
     
     }
 }
