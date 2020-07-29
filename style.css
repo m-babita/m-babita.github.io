@@ -8,6 +8,12 @@
    background:#1d3247; 
    color:bisque;   
 }
+.main{
+  display: table;
+  table-layout: fixed;
+  width:90%;
+  height:100px;
+}
 nav
 { background:#1d3247;
   min-height:10vh;
@@ -18,7 +24,7 @@ nav
 }
 nav .logo
 { 
-   margin-left:5px;
+   margin:10px;
    font-weight:600;
    color: bisque;
    text-decoration: none;
@@ -57,7 +63,10 @@ header
 }
 
  .about,.skills{
-  padding: 50px;
+   padding-left:60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin:50x;
   position:relative;
   width:100%;
   background:#1d3247;
@@ -66,10 +75,11 @@ header
  .skills{
     display:flex;
     flex-direction:column;
-  
+    justify-content:space-evenly;
    }
    .skills ul{
-      justify-content:space-between;
+      margin-top:20px;
+      justify-content:space-evenly;
       list-style-type: none;
       }
   .skills ul li::before {
@@ -81,6 +91,7 @@ header
   margin-left: -1em;
 }
  .about{
+  
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -94,7 +105,7 @@ header
     padding:5px;
     border: 2px solid #BC519E;
     place-items:left;
-   width: 30vw;
+   width: 25vw;
 
 }
 img{
@@ -115,7 +126,7 @@ img{
 .skills h3{
   font-size:1.5em;
    width:100%;
-   margin-bottom: 10px;
+   margin: 10px;
   
 }
 
@@ -125,20 +136,12 @@ img{
 }
 
 
-footer 
-{
-   box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
-   /* bottom:0; */
-   background:#1d3247;
-   width:100%;
-   text-align:center;
-   z-index:10000; 
-}
 
 .content h3
 { margin:5px;
   color: bisque;
   font-size: 2.5em;
+  
 }
 .content h3 span
 {
@@ -154,12 +157,12 @@ footer
 
 .sci
 { background:transparent;
-  bottom:50px;
+  bottom:5px;
   padding 0;
   position:fixed;
   display:flex;
   flex-direction:column;
-  z-index:100;
+  z-index:1000;
   right:25px; 
 }
 .sci::after
@@ -168,7 +171,7 @@ footer
   margin: 5px auto;
   display:block;
   width:2px;
-  height:250px;
+  height:200px;
   background-color: bisque;
 }
 .sci li
@@ -197,15 +200,25 @@ footer
   position:relative;
   width:100%;
   padding-left: 100px;
-  padding-top: 100px;
+  padding-top: 150px;
+  padding-bottom: 100px;
   background:#1d3247;
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
 .contact{
+  padding-left:60px;
+  padding-top: 90px;
+  margin-left:30px;
+  /* margin:0 auto; */
   width:100%;
+  position:relative;
 }
+  .contact h3
+  {
+   font-size:1.9em;
+  }
 .social{
   justify-content:center;
   display:none;
@@ -229,11 +242,27 @@ footer
 {
   fill : #BC519E;
 }
+
+footer 
+{
+   box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+   flex:1;
+   position:absolute;
+   width:100%;
+   margin 0 auto;
+   right:0;
+   left:0;
+   background:#1d3247;
+   text-align:center;
+   z-index:100; 
+   
+}
 .foot{
     width: 100%;
     background-color: #1d3247;
     color: bisque;
     padding: 1rem 0;
+    font-size: 1.3rem;
     text-align: center;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
 }
@@ -251,12 +280,15 @@ footer
 
  
 @media only screen and (max-width: 900px) {
-  
+  nav .logo{
+ margin-left:10px;
+ margin-top:10px;
+  }
   .banner
   {
-   padding: 10px 10px 150px;
+   padding: 100px 20px 150px;
   }
-  .banner h3
+  .contact h3,.banner h3
   {
    font-size:1.9em;
   }
@@ -287,13 +319,18 @@ footer
   }
   .contact {
       overflow-x:hidden;
+      right:0;
       width: 100%;
-      margin: 2rem 0 0 0;
+      margin-left:30px;
       padding: 0;
     }
+  .contact h3
+  {
+   font-size:1.2em;
+  }
     .foot {
         padding: 1rem 0;
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .about  {  
      display:flex;
@@ -307,10 +344,7 @@ footer
 
 @media only screen and (max-width: 500px) {
   
-  /* header  
-  { display:flex;
-     flex-direction: column;  
-  } */
+  
 nav{
    display:flex;
    flex-direction: row; 
@@ -320,11 +354,35 @@ nav ul
 { font-size:1rem;
   flex:1;
 }
+nav .logo{
+margin-left:10px;
+margin-top:10px;
+  }
   .photo{
    width: 30vh;
       
   }
   .banner{
-    margin-top:50px;
+    margin-left:10px;
+    margin-top:10px;
   }
+  .about, .skills{
+   padding-left:30px;
+   padding-top:50px;
+   /* margin-left:0; */
+   overflow-x:hidden;
+ }
+ .skills ul li::before {
+  margin-left: 1em;
+}
+.about h3,.skills h3,{
+  font-size:1.2em;
+}
+ .foot, .foot a{
+      overflow-x:hidden;
+   font-size:1em;
+   text-align:center;
+   margin:0;
+ }
+ 
 }
