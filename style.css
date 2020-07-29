@@ -280,15 +280,21 @@ footer
 
  
 @media only screen and (max-width: 900px) {
+nav{
+min-height: 5vh;
+}
   nav .logo{
  margin-left:10px;
  margin-top:10px;
+  }
+  nav h1,nav ul{
+  font-size:1.5rem;
   }
   .banner
   {
    padding: 100px 20px 150px;
   }
-  .contact h3,.banner h3
+  .banner h3
   {
    font-size:1.9em;
   }
@@ -326,7 +332,7 @@ footer
     }
   .contact h3
   {
-   font-size:1.2em;
+   font-size:1.2rem;
   }
     .foot {
         padding: 1rem 0;
@@ -351,7 +357,7 @@ nav{
 }
 nav h1,
 nav ul
-{ font-size:1rem;
+{ font-size:1.2rem;
   flex:1;
 }
 nav .logo{
