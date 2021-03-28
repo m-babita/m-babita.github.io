@@ -2,12 +2,16 @@
 * 
 { 
   
-   margin:0;
-   padding:0;
-   font-family:'Poppins',sans-serif;  
-   background:#1d3247; 
-   color:bisque;   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;   
 }
+
+body{
+  background:#1d3247;
+  color:bisque;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;}
 .main{
   display: table;
   table-layout: fixed;
@@ -45,6 +49,7 @@ nav ul{
 }
 nav li a{
  text-decoration:none;
+ color: bisque;
   
 }
 nav li a:hover {
@@ -69,7 +74,7 @@ header
   margin:50x;
   position:relative;
   width:100%;
-  background:#1d3247;
+ 
   
     }
  .skills{
@@ -156,64 +161,44 @@ img{
 }
 
 .sci
-{ background:transparent;
+{ 
   bottom:5px;
-  padding 0;
   position:fixed;
   display:flex;
   flex-direction:column;
   z-index:1000;
   right:25px; 
+  list-style: none;
 }
 .sci::after
 {
   content:"";
-  margin: 5px auto;
   display:block;
   width:2px;
-  height:200px;
+  height: 150px;
+  margin: 0px auto;
   background-color: bisque;
 }
-.sci li
-{ 
-   background:transparent;
-  list-style: none;
-}
-.sci svg
-{
-  display: grid;
-  background:transparent;
+
+.fa-instagram, .fa-github, .fa-linkedin
+{ font-size: 2rem;
+  padding :0.5rem;
   place-items:bottom;
-  width: 25px;
-  height:25px;
-  fill: bisque;
-  margin:20px 0 0;
+  color: bisque;
+  display: inline-table;
 }
-.sci svg:hover
+.fa-instagram:hover,.fa-github:hover, .fa-linkedin:hover
 {
-  fill : #BC519E;
+  color : #BC519E ;
 }
 
-
-.banner
-{ overflow-x:hidden;
-  position:relative;
-  width:100%;
-  padding-left: 100px;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  background:#1d3247;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
 .contact{
-  padding-left:60px;
-  padding-top: 90px;
-  margin-left:30px;
-  /* margin:0 auto; */
+  margin-bottom: 0;
   width:100%;
   position:relative;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+   position:absolute;
+   text-align:center;
 }
   .contact h3
   {
@@ -224,53 +209,20 @@ img{
   display:none;
   }
 .social li{
-  background:transparent;
+  color: bisque;
   list-style:none;
-}
-.social svg
-{   background:transparent;
-  position:relative;
-  place-items:center;
-  width: 25px;
-  height:25px;
-  fill: bisque;
-
-  margin:20px;
-  
-}
-.social svg:hover
-{
-  fill : #BC519E;
+  padding: 1rem;
 }
 
-footer 
-{
-   box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
-   flex:1;
-   position:absolute;
-   width:100%;
-   margin 0 auto;
-   right:0;
-   left:0;
-   background:#1d3247;
-   text-align:center;
-   z-index:100; 
-   
-}
 .foot{
-    width: 100%;
-    background-color: #1d3247;
     color: bisque;
-    padding: 1rem 0;
+    padding: 1rem;
     font-size: 1.3rem;
     text-align: center;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
 }
  .foot a{text-decoration: none;
     color: bisque;
-    display: inline-block;
-    font-size: 1.3rem;
-    margin: auto 1.5rem;
 }
 .foot a:hover{
    
@@ -306,28 +258,17 @@ min-height: 5vh;
   .social{
     display: flex;
     flex-direction:row;
+   
   }
   .sci
   {
-    position: absolute;
-    bottom:50px;
-    right: initial;
-    flex-direction: row;
-  }
-  .sci::after
-  {
     display:none;
+    
   }
-  .sci li svg
-  { justify-content: space-between;
-   margin:initial;
-   margin-right: 50px;
-  }
+
   .contact {
       overflow-x:hidden;
-      right:0;
       width: 100%;
-      margin-left:30px;
       padding: 0;
     }
   .contact h3
