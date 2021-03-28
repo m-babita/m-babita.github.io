@@ -140,7 +140,9 @@ img{
    float:left;
 }
 
-
+.content{
+  padding: 7rem 3rem;
+}
 
 .content h3
 { margin:5px;
@@ -244,15 +246,15 @@ min-height: 5vh;
   }
   .banner
   {
-   padding: 100px 20px 150px;
+   padding: 5rem 2rem;
   }
   .banner h3
   {
    font-size:1.9em;
   }
   .banner .content p,
-  .banner .content a
-  {
+
+  { padding: 5rem 2rem;
    font-size: 1.2em;
   }
   .social{
@@ -309,9 +311,8 @@ margin-top:10px;
    width: 30vh;
       
   }
-  .banner{
-    margin-left:10px;
-    margin-top:10px;
+  .content{
+    padding: 5rem 2rem;
   }
   .about, .skills{
    padding-left:30px;
