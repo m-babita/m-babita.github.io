@@ -59,13 +59,13 @@ nav li a:hover {
 .logo a{
   height:10vh;
 }
-.banner, .about
+.banner, .about h3
   {
-   padding: 10vh;
+   padding: 2.5rem 0rem;
   }
 
- .about,.skills{
-   padding:5rem;
+ .skills{
+   padding:5rem 2rem;
    margin: 0 auto;
    overflow: hidden;
   width:100%;
@@ -74,6 +74,7 @@ nav li a:hover {
     }
 
  .about{
+   padding: 2rem;
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -87,7 +88,7 @@ nav li a:hover {
     padding:5px;
     border: 2px solid #BC519E;
     place-items:left;
-   width: 25vw;
+   width: 50vh;
 
 }
 .photo img{
@@ -126,7 +127,6 @@ width: 1rem;
 }
 .skills ul{
   
-  padding: 2rem;
   list-style-type: none;
    border-top: solid 2px #BC519E; 
    margin-top:20px;
@@ -318,7 +318,7 @@ nav ul,li
   width: 50%;
 }
   .photo{
-   width: 30%;
+   width: 70%;
       
   }
   .content{
