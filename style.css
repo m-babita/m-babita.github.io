@@ -38,7 +38,7 @@ nav img
    height: auto;
 }
 nav ul,li
-{ font-size:2rem;
+{ font-size:1.5rem;
   display: flex;
   flex:1;
   list-style: none;
@@ -59,7 +59,10 @@ nav li a:hover {
 .logo a{
   height:10vh;
 }
-
+.banner, .about
+  {
+   padding: 10vh;
+  }
 
  .about,.skills{
    padding:5rem;
@@ -196,16 +199,19 @@ width: 1rem;
 }
 
 .contact{
-  margin-bottom: 0;
+  margin:0;
+  padding-top:2rem;
   width:100%;
   position:relative;
   box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
    text-align:center;
    overflow: hidden;
-}
+  
+  }
   .contact h3
   {
-   font-size:1.9em;
+   font-size:1.5rem;
+   
   }
 .social{
   
@@ -218,6 +224,7 @@ width: 1rem;
 }
 
 .foot{
+    
     color: bisque;
     padding: 1rem;
     font-size: 1.3rem;
@@ -240,16 +247,17 @@ width: 1rem;
 
   .header{
     overflow: hidden;
-    
   }
-  nav ul,li{
-  font-size:1rem;
+  nav ul{
+  font-size:1.3rem;
   align-items: center;  
+  width:50%;
+  height: 8vh;
 
 }
-  .banner
-  {
-   padding: 5rem 2rem;
+
+  .skills li,nav li{
+    width: 100%;
   }
   .banner h3
   {
@@ -287,15 +295,24 @@ width: 1rem;
     .about  {  
      display:flex;
      flex-direction: column; 
-     bottom:20px;
+     bottom:15px;
      right: initial;
     
     }
  
 }
+nav li a{
+  overflow-x:hidden;
+
+text-align:center;
+margin:0;
+}
 
 @media only screen and (max-width: 500px) {
 
+  .header{
+    height: 8vh;
+  }
 nav ul,li
 {
   width: 50%;
@@ -307,17 +324,13 @@ nav ul,li
   .content{
     padding: 5rem 2rem;
   }
-  .about, .skills{
-   padding:2rem ;
-   /* margin-left:0; */
- }
  .skills ul li::before {
   margin-left: 1em;
 }
 .about h3,.skills h3,{
   font-size:1.2em;
 }
- .foot, .foot a{
+ .foot, .foot a,li a{
       overflow-x:hidden;
    font-size:0.5em;
    text-align:center;

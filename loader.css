@@ -18,7 +18,7 @@
          margin: 0;
          color: bisque;
          animation: text 3.5s ease both infinite;
-         font-size: 1em;
+         font-size: 1rem;
          letter-spacing: 1px;
       }
          @keyframes text {
