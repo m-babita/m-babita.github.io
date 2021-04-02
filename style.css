@@ -198,6 +198,11 @@ width: 1rem;
   color : #BC519E ;
 }
 
+.work{
+  font:1rem;
+  text-align: center;
+}
+
 .contact{
   margin:0;
   padding-top:2rem;
@@ -213,14 +218,21 @@ width: 1rem;
    font-size:1.5rem;
    
   }
-.social{
-  
-  display:none;
+  .social{
+   
+    display:inline-flex;
+    flex-direction:row;
+    position:relative;
+
   }
 .social li a{
   color: bisque;
   list-style:none;
   padding: 1rem;
+  
+}
+.social li{
+  width:20%;
 }
 
 .foot{
@@ -268,11 +280,7 @@ width: 1rem;
   { padding: 5rem 0rem;
    font-size: 1.2em;
   }
-  .social{
-    display: flex;
-    flex-direction:row;
-    text-align: center;
-  }
+ 
   .sci
   {
     display:none;
