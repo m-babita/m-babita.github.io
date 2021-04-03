@@ -82,7 +82,7 @@ nav li a:hover {
     }
  .photo{ 
   
-    margin:0px ;
+    margin-right: 5px;
     display:flex;
     flex-direction:row;
     padding:5px;
@@ -105,7 +105,7 @@ nav li a:hover {
 }
 .about h3{
   font-size:1.5em;
-   margin: 10px;
+ 
 }
 .skills{
   display:flex;
@@ -168,7 +168,7 @@ width: 1rem;
 
 .sci
 { 
-  bottom:5px;
+  bottom:25px;
   position:fixed;
   display:flex;
   flex-direction:column;
@@ -180,14 +180,14 @@ width: 1rem;
 {
   content:"";
   display:block;
-  width:2px;
+  width:1px;
   height: 150px;
   margin: 0px auto;
   background-color: bisque;
 }
 
 .fa-instagram, .fa-github, .fa-linkedin
-{ font-size: 1.8rem;
+{ font-size: 1.2rem;
   padding :0.5rem;
   place-items:bottom;
   color: bisque;
@@ -199,8 +199,41 @@ width: 1rem;
 }
 
 .work{
-  font:1rem;
+  padding: 4rem;
+  display: block;
+  font:1.5rem;
   text-align: center;
+}
+.work-desc{
+  padding: 1rem;
+  display: flex;
+  margin-top: 150px;
+  background-color: #f58cd72a;
+}
+.work a{
+    text-decoration:none;
+    color: bisque;
+}
+.work a:hover{
+
+  color: #d84fb1;
+}
+
+.work img:hover{
+  width: 62%;
+  filter: none;
+}
+
+
+.work img{
+  float:left;
+  padding: 1rem;
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  height:auto;
+  position: relative;
+  width: 60%;
+  filter: blur(2px);
 }
 
 .contact{
@@ -321,11 +354,14 @@ margin:0;
   .header{
     height: 8vh;
   }
-nav ul,li
+li
 {
   width: 50%;
 }
-  .photo{
+nav ul{
+  display: none;
+}
+.photo{
    width: 70%;
       
   }
@@ -338,6 +374,10 @@ nav ul,li
 .about h3,.skills h3,{
   font-size:1.2em;
 }
+.work img,.work img:hover{
+  width: 100%;
+}
+
  .foot, .foot a,li a{
       overflow-x:hidden;
    font-size:0.5em;
