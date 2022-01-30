@@ -575,7 +575,7 @@ the website, in dark theme
 .work__img{
   border-radius: 1rem;
   margin-bottom: .75rem;
-  max-width: 300px;
+  max-width: 200px;
   max-height: 400px;
 }
 
@@ -859,6 +859,7 @@ the website, in dark theme
   .contact__container{
     grid-template-columns: repeat(2, 1fr);
   }
+  
   .footer__container{
     grid-template-columns: repeat(1, 1fr);
   }
@@ -917,6 +918,10 @@ the website, in dark theme
     width: 380px;
   }
 
+  .work__img{
+   
+    max-width: 400px;
+  }
   .footer__logo{
     font-size: var(--h3-font-size);
   }
