@@ -80,16 +80,16 @@ modalClose.forEach((mc)=>{
     })
 })
 
-// Mixitup
+// // Mixitup
 
-let mixerPortfolio = mixitup('.work__container', {
-    selectors: {
-        target: '.work__card'
-    },
-    animation: {
-        duration: 300
-    }
-});
+// let mixerPortfolio = mixitup('.work__container', {
+//     selectors: {
+//         target: '.work__card'
+//     },
+//     animation: {
+//         duration: 300
+//     }
+// });
 
 // active work
 const linkWork = document.querySelectorAll('.work__item')

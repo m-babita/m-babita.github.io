@@ -16,7 +16,7 @@
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
-  --container-color: #FFF;
+  --container-color: rgb(208, 240, 235);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -490,7 +490,7 @@ the website, in dark theme
 
 .services__modal-content{
   position:relative;
-  background-color: var(--body-color);
+  background-color: var(--container-color);
   padding: 4.5rem 1.5rem 2.5rem;
   border-radius:1.5rem;
 }

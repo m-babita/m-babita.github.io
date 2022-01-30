@@ -2,7 +2,7 @@
     opacity:1;
    width: 100%;
    height: 100vh;
-   background: linear-gradient(to bottom left, #1d3247 60%, #bc519e 100%);
+   background:rgb(23, 23, 34);;
    display: flex;
    justify-content: center;
    align-items: center;
