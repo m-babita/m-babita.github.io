@@ -558,7 +558,7 @@ the website, in dark theme
 }
 
 .work__item{
-  opacity: 0;
+  /* opacity: 0; */
   cursor: pointer;
   color: var(--first-color-dark);
   padding:.25rem .75rem;
