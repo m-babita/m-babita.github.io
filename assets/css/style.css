@@ -568,14 +568,13 @@ the website, in dark theme
 
 .work__card{
   background-color: var(--container-color);
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 1rem;
 }
 
 .work__img{
   border-radius: 1rem;
   margin-bottom: .75rem;
-  max-width: 200px;
   max-height: 400px;
 }
 
@@ -919,7 +918,7 @@ the website, in dark theme
   }
 
   .work__img{
-   
+   justify-content: center;
     max-width: 400px;
   }
   .footer__logo{
