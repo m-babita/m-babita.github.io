@@ -5,104 +5,390 @@
      <meta name=”description” content="Portfolio of student" />
      <meta name=”keywords” content="portfolio, student, amature, babita majumdar , github" />
      <meta charset="UTF-8">
+
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
     crossorigin="anonymous" />
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
      <title>Babita Majumdar</title>
-      <link href="style.css" rel="stylesheet" type="text/css">  
-      <link href="loader.css" rel="stylesheet" type="text/css">
-      <link rel="icon" href="favicon.ico" type="image/gif" >
+      
+      <link rel="icon" href="assets/img/favicon.png" type="image/gif" >
    </head>
    <body>
-      <div id="loader">
-   <div class="loading">
-     <p>loading</p>
-      <span></span>
-    </div>
-   </div>
-      <div id="main" class="main">
-        <div class="header">
-            <nav>
-            <a href="#" class="logo"> <img class="img" src="logo.png"></a>
-            <ul> 
-            <li><a class="active" href="#home"> Home</a></li>
-            <li><a href="#about">About</a> </li>
-		      <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Project</a></li>   
-            <li><a href="#contact"> Contact</a></li>
-            
-         </ul>  
-		      </nav>
-         <!--commit-->
-         </div>  
-         
-      <section id="home" class="banner" > 
-       <div class="content">
-          <h3> Hello!<br> I'm <span>Babita Majumdar</span></h3>
-          <p>A Designer | Developer <br> learning and living in Indore, MP, India.</p>
-       </div>
-           <ul class="sci">
-          <li><a  href="https://github.com/m-babita" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a  href="https://www.linkedin.com/in/babita-majumdar-02847b1b3/" target="_blank"><i class="fab fa-linkedin"></i></a> </li>
-		    <li><a  href="https://www.instagram.com/m_babita_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-		   </ul>
-      </section> 
-     
-       <section id="about" class="about">
-       <h3>Who's this girl?</h3>
-          <p>I'm Babita Majumdar. Currently in my 3rd year SVVV, Indore, MP, India. 
-          I enjoy coding. I want to use technology to help make people's live more fulfiling.<br>
-          In my free time I enjoy reading books, sketching and making illustrations.<br>
-          I love cats.<br> 
-          ᓚᘏᗢ </p>
-          <div class="photo">
-                    <img class="img" src="me.jpeg">
-                </div>
+      <header class="header" id="header">
+         <nav class="nav container">
+             <a href="#" class="nav__logo">
+                  /bm/
+             </a>
+
+             <div class="nav__menu" id="nav-menu">
+                 <ul class="nav__list">
+                     <li class="nav__item">
+                         <a href="#home" class="nav__link active-link">Home</a>
+                     </li>
+                     <li class="nav__item">
+                         <a href="#about" class="nav__link">About</a>
+                     </li>
+                     <li class="nav__item">
+                         <a href="#services" class="nav__link">Services</a>
+                     </li>
+                     <li class="nav__item">
+                         <a href="#projects" class="nav__link">Projects</a>
+                     </li>
+                     <li class="nav__item">
+                         <a href="#contact" class="nav__link">Contact</a>
+                     </li>
+                 </ul>
+
+                 <div class="nav__close" id="nav-close">
+                     <i class="ri-close-line"></i>
+                 </div>
+             </div>
+
+             <div class="nav__btns">
+                 <!-- Theme change button -->
+                 <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                 <div class="nav__toggle" id="nav-toggle">
+                     <i class="ri-menu-line"></i>
+                 </div>
+             </div>
+         </nav>
+     </header>
+
+     <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home" id="home">
+             <div class="home__container container grid">
+                 <img src="assets/img/me.png" alt="" class="home__img">
+
+                 <div class="home__data">
+                        <p class="home__description">
+                           Hello, I am
+                     </p>
+                     <h1 class="home__title">
+                         Babita Majumdar
+                     </h1>
+                     <p class="home__description">
+                         Front-End Developer
+                     </p>
+                     <a download="" href="assets/pdf/RESUME BABITA MAJUMDAR.pdf" class="button button--flex">
+                         Download CV <i class="ri-download-line" button__icon"></i>
+                     </a>
+                 </div>
+
+                 <div class="home__social">
+                     
+
+                     <div class="home__social-links">
+                         <a href="https://github.com/m-babita/" target="_blank" class="home__social-link">
+                             <i class="ri-github-fill"></i>
+                         </a>
+                         <a href="https://www.instagram.com/m_babita_/" target="_blank" class="home__social-link">
+                             <i class="ri-instagram-line"></i>
+                         </a>
+                         <a href="https://www.linkedin.com/in/babita-majumdar-02847b1b3/" target="_blank" class="home__social-link">
+                             <i class="ri-linkedin-fill"></i>
+                         </a>
+                     </div>
+                     <span class="home__social-follow"></span>
+                 </div>
+             </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section container" id="about">
+            <h2 class="section__title">About</h2> <span></span>   
+             <div class="about__container grid">
+               
+               <img src="assets/img/illustration.png" alt="" class="about__img">
+
+                 <div class="about__data">
+                     <h2 class="section__title about__title">
+                         Who I am?
+                     </h2>
+
+                     <p class="about__description">
+                        I'm Babita Majumdar. Currently in my 3rd year SVVV, Indore, MP, India. I enjoy coding.
+                        I want to use technology to help make people's live more fulfiling.<br><br>
+                        In my free time I enjoy reading books, sketching and making illustrations.<br>
+                        I love cats.<br>
+                        ᓚᘏᗢ
+                     </p>
+
+                 </div>
+             </div>
+         </section>
+
+          <!--==================== Services ====================-->
+          <section class="services section container" id="services">
              
-       </section>
-       <section id="skills"class="skills">
-       <h3>Here are a few technologies I've been working with recently:</h3>
-       <ul>
-       <li>C/C++</li>
-       <li>Html</li>
-       <li>CSS</li>
-       <li>PHP</li>
-       <li>MySQL</li>
-       <li>JavaScript</li>
-       </ul>
-       </section>
-       <div id="work"class="work">
-          <h2>My Recent Work</h2>
-          
-          <img src="todoList.png" alt="TodoList">
-          <div class="work-desc">
+             <h2 class="section__title">My Services</h2>
+             <span class="section__subtitle">What I Offer</span>
+             <div class="services__container grid">
+
+               <div class="services__card">
+                  <h3 class="services_title">Web <br> Development</h3> <br>
+
+                  <span class="services__button">
+                     See more <i class="ri-arrow-right-line services__icon"></i>
+                  </span>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close" ></i>
+
+                        <h3 class="services__modal-title">Web Development</h3>
+                        <p class="services__modal-description">
+                              I develop responsive websites with user friendly interfaces that are accessible and desirable. <br>
+                              Tools and Technologies:
+                        </p>
+
+                        <ul class="services__modal-list">
+                           <li class="services__modal-item">
+                              <i class="ri-arrow-right-line services__modal-icon"></i>
+                              <p class="services__modal-info">
+                                    HTML
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class="ri-arrow-right-line services__modal-icon"></i>
+                              <p class="services__modal-info">
+                                 CSS
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class="ri-arrow-right-line services__modal-icon"></i>
+                              <p class="services__modal-info">
+                                 JavaScript
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class="ri-arrow-right-line services__modal-icon"></i>
+                              <p class="services__modal-info">
+                                 GitHub
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class="ri-arrow-right-line services__modal-icon"></i>
+                              <p class="services__modal-info">
+                                 React
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="services__card">
+                  <h3 class="services_title">Graphic<br>Design</h3> <br>
+
+                  <span class="services__button">
+                     See more <i class="ri-arrow-right-line services__icon"></i>
+                  </span>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close" ></i>
+
+                        <h3 class="services__modal-title">Graphic Design</h3>
+                        <p class="services__modal-description">
+                              I design posters and illustrations. I've made poster for technical events and Rotaract club.<br>
+                              Tools I use:
+                        </p>
+
+                        <ul class="services__modal-list">
+                           <li class="services__modal-item">
+                              <i class="ri-arrow-right-line services__modal-icon"></i>
+                              <p class="services__modal-info">
+                                    Adobe Illustrator
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class="ri-arrow-right-line services__modal-icon"></i>
+                              <p class="services__modal-info">
+                                 Figma
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class="ri-arrow-right-line services__modal-icon"></i>
+                              <p class="services__modal-info">
+                                 Canva
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+             </div>
+
+          </section>
+
+          <!--==================== Project ====================-->
+          <section class="projects section container " id="projects">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+               <span class="work__item active-work" data-filters='all'>All</span>
+               <span class="work__item" data-filters='.web'>Web</span>
+               <span class="work__item" data-filters='.design'>Design</span>
+            </div>
+
+            <div class="work__container container grid">
+
+               <div class="work__card mix web">
+                  <img src="assets/img/web1.jpg" alt="" class="work__img">
+                  <h3 class="work__title">Coffee Shop</h3>
+                  <a href="https://coffebeans.netlify.app/" target="_blank" class="work__button">
+                     Demo <i class="ri-arrow-right-line work__icon"></i>
+                  </a>
+                  <a href="https://github.com/m-babita/CoffeeBean" target="_blank" class="work__button">
+                     Code
+                  </a>
+               </div>
+
+               <div class="work__card mix web">
+                  <img src="assets/img/web2.jpeg" alt="" class="work__img">
+                  <h3 class="work__title">Payment Gateway</h3>
+                  <a href="https://payment-gateway-bm.herokuapp.com/" target="_blank" class="work__button">
+                     Demo <i class="ri-arrow-right-line work__icon"></i>
+                  </a>
+                  <a href="https://github.com/m-babita/PaymentGateway" target="_blank" class="work__button">
+                     Code
+                  </a>
+               </div>
+
+               <div class="work__card mix web">
+                  <img src="assets/img/web3.png" alt=""  class="work__img">
+                  <h3 class="work__title">User Card</h3>
+                  
+                  <a href="https://github.com/m-babita/UserCard"target="_blank" class="work__button">
+                     Code
+                  </a>
+               </div>
+
+               <div class="work__card mix design">
+                  <img src="assets/img/poster1.jpg" alt="" class="work__img">
+                  <h3 class="work__title">CSI Giveaway</h3>
+                  
+               </div>
+
+               <div class="work__card mix design">
+                  <img src="assets/img/poster2.jpg" alt="" class="work__img">
+                  <h3 class="work__title">Instagram Story</h3>
+                  
+                  <a href="https://github.com/m-babita/UserCard" class="work__button">
+                     Code
+                  </a>
+               </div>
+
+               <div class="work__card mix design">
+                  <img src="assets/img/poster3.jpg" alt="" class="work__img">
+                  <h3 class="work__title">Tech Poster</h3>
+               </div>
+
+               <div class="work__card mix design">
+                  <img src="assets/img/illustration1.png" alt="" class="work__img">
+                  <h3 class="work__title">Scenery Illustration</h3>
+               </div>
+
+               <div class="work__card mix design">
+                  <img src="assets/img/illustration2.jpg" alt="" class="work__img">
+                  <h3 class="work__title">Aquarium Illustration</h3>
+               </div>
+            </div>
+         </section>
+
+          <!--==================== CONTACT ====================-->
+          <section class="contact section container" id="contact">  
+            <h2 class="section__title">-- Get In touch --</h2> <span></span>  
             
-             <p>
-               <h2>TO DO LIST</h2>
-                A simple todo list, where you can add tasks and mark complete or delete them.
-                Here I used CSS, HTML and basic Javascript. 
-             
-          <a href="https://github.com/m-babita/Todo-List" target="_blank"> 
-          <i class="fas fa-external-link-alt" ></i></a></p>
-         </div>
-       </div>
-       <div id="contact"class="contact">
-       
-       <h3>Get In Touch</h3> <br>
-       <p>Whether you have a question or just want to say hi,<br>
-       Feel free to drop a message.<br>
-      </p><br>
-       <ul class="social">
-          <li><a  href="https://github.com/m-babita" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a  href="https://www.linkedin.com/in/babita-majumdar-02847b1b3/" target="_blank"><i class="fab fa-linkedin"></i></a> </li>
-		    <li><a  href="https://www.instagram.com/m_babita_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-		 </ul>
+            
+
+            <div class="contact__container grid">
+
+               <div class="contact__data">
+                  <img src="assets/img/contact.png" alt="" class="about__img">
+               </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Email</label>
+                        </div>
+
+                        <div class="contact__content">
+                            <input type="text" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__content contact__area">
+                            <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                            <label for="" class="contact__label">Message</label>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex">
+                        Send Message
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <h3 class="section__title">
+         /bm/
+     </h3>
+        <div class="footer__container container grid">
       
-      <div class="foot">Crafted with &lt;3 | &copy; Babita Majumdar 2020 | <a href="mailto:babita.majumdar.1@gmail.com " target="_blank">babita.majumdar.1@gmail.com</a> </div>
-      </footer><div></div>
-    </div>
+         
+            <div class="footer__content">
+               <h2 class="section__subtitle">@babita.majumdar.1@gmail.com</h2>
+
+                <ul class="section__subtitle">
+                    
+                    
+                    <div class="footer__social">
+                     <a href="https://github.com/m-babita/" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/m_babita_/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/babita-majumdar-02847b1b3/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="footer__copy">Crafted with <3 | &#169; Babita Majumdar 2022</p>
+    </footer>
+         <!-- mixitup -->
+         <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+         <i class="ri-arrow-up-fill scrollup__icon"></i>
+     </a>
+
    </body>
-    <script src="script.js"> </script>
+    <script src="assets/js/script.js"> </script>
  </html>
 
  <!-- git init
