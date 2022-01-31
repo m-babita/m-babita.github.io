@@ -8,15 +8,15 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
-  --first-color: #17D1B9ff;
-  --first-color-alt: rgb(6, 129, 113);
+  --first-color: rgb(35, 180, 161);
+  --first-color-alt: rgb(8, 119, 104);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
-  --container-color: rgb(208, 240, 235);
+  --container-color: rgb(200, 230, 225);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -114,11 +114,11 @@ img{
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --first-color-dark: rgb(7, 160, 140);
+  --first-color-dark: #026677;;
   --title-color: hsl(var(--hue), 4%, 95%);
   --text-color: hsl(var(--hue), 4%, 75%);
-  --body-color: rgb(23, 23, 34);
-  --container-color: rgb(34, 34, 51);
+  --body-color: rgb(34, 34, 46);
+  --container-color: rgb(55, 55, 70);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -560,7 +560,7 @@ the website, in dark theme
 .work__item{
   /* opacity: 0; */
   cursor: pointer;
-  color: var(--first-color-dark);
+  color: var(--first-color);
   padding:.25rem .75rem;
   font-weight: .5rem;
   border-radius:.5rem;
@@ -635,10 +635,14 @@ the website, in dark theme
   font-weight: var(--font-medium);
 }
 
-.contact__icon,
-.contact__btn{
+.contact__icon{
   color: #FFF;
   font-size: 1.25rem;
+}
+
+.contact__btn{
+  color: #FFF;
+  font-size: 1rem;
 }
 
 .contact__inputs{
@@ -938,7 +942,7 @@ the website, in dark theme
     right: -60%;
   }
   .home__social-link{
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 
   .about__container{
