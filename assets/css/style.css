@@ -354,7 +354,7 @@ the website, in dark theme
 }
 
 .home__social-link{
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--first-color);
   transition: .3s;
 }
@@ -439,7 +439,7 @@ the website, in dark theme
 
 /*=============== SERVICES ===============*/
 .services__container{
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(1,1fr);
   gap:1.rem;
   padding-top: 1rem;
 }
@@ -635,7 +635,9 @@ the website, in dark theme
   font-weight: var(--font-medium);
 }
 
-.contact__icon{
+.contact__icon,
+.contact__btn{
+  color: #FFF;
   font-size: 1.25rem;
 }
 
@@ -707,7 +709,7 @@ the website, in dark theme
 
 
 .footer__title{
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   margin-bottom: var(--mb-1-5);
 }
 
@@ -734,15 +736,6 @@ the website, in dark theme
 
 .footer__social-link:hover{
   transform: translateY(-.25rem);
-}
-
-.footer__cards{
-  display: inline-flex;
-  align-items: center;
-  column-gap: .5rem;
-}
-.footer__card{
-  width: 35px;
 }
 
 .footer__copy{
@@ -822,9 +815,9 @@ the website, in dark theme
 
 /* For medium devices */
 @media screen and (min-width: 576px){
- 
+  
 
-  .work__container{
+  .work__container,.services__container{
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
