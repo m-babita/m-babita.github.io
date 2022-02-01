@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta name=”description” content="Portfolio of student" />
      <meta name=”keywords” content="portfolio, student, amature, babita majumdar , github" />
-     <meta charset="UTF-8">
      <meta name="description" content="This is a responsive portfolio website of Babita Majumdar.">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
     crossorigin="anonymous" />
+
+    <!-- Loader SCSS -->
+    <link rel="stylesheet" href="assets/css/loader.css">
 
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -20,7 +23,16 @@
       
       <link rel="icon" href="assets/img/favicon.png" type="image/gif" >
    </head>
-   <body>
+   <body onload ="preloader()">
+
+      <!-- Loader -->
+      <div id="loader-wrapper">
+         <div class="loading">
+      <p>loading</p>
+            <span></span>
+         </div>
+      </div>
+      
       <header class="header" id="header">
          <nav class="nav container">
               <a rel="noopener" href="#" class="nav__logo">
@@ -79,7 +91,7 @@
                          Front-End Developer
                      </p>
                       <a rel="noopener" download="" href="assets/pdf/RESUME BABITA MAJUMDAR.pdf" class="button button--flex">
-                         Download CV <i class="ri-download-line" button__icon"></i>
+                         Download CV <i class="ri-download-line button__icon"></i>
                      </a>
                  </div>
 
@@ -261,7 +273,7 @@
                   <h3 class="work__title">Instagram Story</h3>
                   
                </div>
-               
+
                <div class="work__card mix web">
                   <img src="assets/img/web2.jpeg" alt="" class="work__img">
                   <h3 class="work__title">Payment Gateway</h3>
@@ -306,7 +318,7 @@
          </section>
 
           <!--==================== CONTACT ====================-->
-          <section class="contact section container" id="contact">  
+          <section class="contact section container grid" id="contact">  
             <h2 class="section__title">-- Get In touch --</h2> <span></span>  
             
             
@@ -336,9 +348,9 @@
                     </div>
 
                     <button class="button button--flex">
-                     <a rel="noopener" href="mailto:webmaster@example.com" target="_blank" class="contact__btn">
+                     <!-- <a rel="noopener" href="mailto:babita.majumdar.1@gmail.com.com" target="_blank" class="contact__btn"> -->
                         Send Message
-                        </a> 
+                        
                         <i class="ri-arrow-right-up-line button__icon"></i>
                     </button>
                 </form>
@@ -387,7 +399,9 @@
         <!--=============== SCROLL UP ===============-->
          <a rel="noopener" href="#" class="scrollup" id="scroll-up"> 
          <i class="ri-arrow-up-fill scrollup__icon"></i>
-     </a>
+         </a>
+         
+       
 
    </body>
     <script src="assets/js/script.js"> </script>

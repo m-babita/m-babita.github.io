@@ -15,7 +15,7 @@
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: hsl(var(--hue), 0%, 100%);
+  --body-color: rgb(252, 252, 252);
   --container-color: rgb(200, 230, 225);
 
   /*========== Font and typography ==========*/
@@ -114,10 +114,10 @@ img{
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --first-color-dark: #026677;;
+  --first-color-dark: #026677;
   --title-color: hsl(var(--hue), 4%, 95%);
   --text-color: hsl(var(--hue), 4%, 75%);
-  --body-color: rgb(34, 34, 46);
+  --body-color: rgb(36, 36, 46);
   --container-color: rgb(55, 55, 70);
 }
 
@@ -204,7 +204,6 @@ the website, in dark theme
 }
 
 .nav__logo{
-  text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -1px;
   display: inline-flex;

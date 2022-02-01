@@ -1,3 +1,9 @@
+// loader
+let load =document.getElementById('loader-wrapper');
+            setTimeout(function preloader(){
+               load.style.display='none';
+            }, 1000);
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
