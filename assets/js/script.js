@@ -1,8 +1,11 @@
 // loader
-let load =document.getElementById('loader-wrapper');
-            setTimeout(function preloader(){
-               load.style.display='none';
-            }, 1000);
+let loader =document.querySelector('.loader-wrapper')
+    window.addEventListener("load", vanish);
+
+             function vanish(){
+               loader.classList.add("disappear");
+            };
+            
 
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
