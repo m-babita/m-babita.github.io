@@ -12,10 +12,11 @@
   --first-color-alt: rgb(8, 119, 104);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
+  --first-color-light-btn: rgb(203, 247, 241);
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: rgb(252, 252, 252);
+  --body-color: hsl(181, 80%, 95%);
   --container-color: rgb(200, 230, 225);
 
   /*========== Font and typography ==========*/
@@ -403,10 +404,12 @@ the website, in dark theme
 /*=============== ABOUT ===============*/
 .about__container{
   row-gap: 2rem;
+  justify-content: center;
 }
 
 .about__img{
   width: 280px;
+  align-self: center;
   justify-self: center;
 }
 
@@ -415,26 +418,11 @@ the website, in dark theme
 }
 
 .about__description{
+  text-align: justify;
   margin-bottom: var(--mb-2);
+  margin-top: var(--mb-2);
 }
 
-.about__details{
-  display: grid;
-  row-gap: 1rem;
-  margin-bottom: var(--mb-2-5);
-}
-
-.about__details-description{
-  display: inline-flex;
-  column-gap: .5rem;
-  font-size: var(--small-font-size);
-}
-
-.about__details-icon{
-  font-size: 1rem;
-  color: var(--first-color);
-  margin-top: .15rem;
-}
 
 /*=============== SERVICES ===============*/
 .services__container{
@@ -450,12 +438,13 @@ the website, in dark theme
 }
 
 .services__title{
+  color: var(--first-color-light-btn);
   font-size: var(--h3-font-size);
   margin-bottom: 2.5rem;
 }
 
 .services__button{
-  color: var(--first-color-alt);
+  color: var(--first-color-light-btn);
   font-size: var(--small-font-size);
   display:flex;
   align-items: center;
